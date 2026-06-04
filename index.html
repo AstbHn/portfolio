@@ -1,195 +1,459 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>이형호 | Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>이형호 | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="이형호 - Full-Stack Developer 포트폴리오">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<aside class="side-nav">
-<div class="nav-header">
-<h1 class="logo">PORTFOLIO</h1>
-<p class="job">Backend Developer</p>
-</div>
+  <!-- ===================== Navigation ===================== -->
+  <header class="top-nav" id="top-nav">
+    <div class="nav-inner">
+      <a href="#intro" class="nav-logo">이형호</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav class="nav-menu">
-<a href="#intro">Intro</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#contact">Contact</a>
-</nav>
-</aside>
+  <!-- ===================== Hero ===================== -->
+  <section id="intro" class="section hero-section">
+    <div class="section-inner hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">Full-Stack Developer</p>
+        <h1 class="hero-name">이형호</h1>
+        <p class="hero-desc">기능 구현을 넘어<br>데이터 흐름과 서비스 안정성을 고민합니다.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+          <a href="#contact" class="btn btn-outline">연락하기</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="resources/profile.png" alt="이형호 프로필 사진">
+      </figure>
+    </div>
+  </section>
 
-<main class="content">
+  <!-- ===================== About ===================== -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>About Me</h2>
+      </div>
+      <p class="section-lead">신속한 구현 속에 데이터의 가치를 담는 개발자</p>
 
-<section id="intro" class="section intro">
-<div class="intro-text">
-<h2>도전하는 개발자, 이형호</h2>
-<p>기능 구현을 넘어서<br>데이터 흐름과 서비스 안정성을 고민합니다.</p>
-</div>
+      <div class="about-body">
+        <div class="about-text">
+          <p>컴퓨터소프트웨어과를 전공하며 백엔드 개발을 중심으로 학습했습니다. Spring Boot와 Flask 기반 웹 서비스 경험이 있으며, 전체 데이터 흐름과 예외 상황을 고려한 안정적인 구조 설계를 중요하게 생각합니다.</p>
+          <p>팀 프로젝트에서 팀장으로서 일정 관리와 코드 리뷰를 주도했으며, 학점 4.35/4.5를 유지하며 꾸준한 성과를 이어왔습니다.</p>
+        </div>
+        <div class="about-info">
+          <div class="info-row">
+            <span class="info-key">생년월일</span>
+            <span class="info-val">1999. 03. 13</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">연락처</span>
+            <span class="info-val">010-3815-6488</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">학력</span>
+            <span class="info-val">오산대학교 컴퓨터소프트웨어과</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">이메일</span>
+            <span class="info-val"><a href="mailto:astbhnd9@gmail.com">astbhnd9@gmail.com</a></span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">GitHub</span>
+            <span class="info-val"><a href="https://github.com/AstbHn" target="_blank">github.com/AstbHn</a></span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">병역</span>
+            <span class="info-val">미필</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<figure class="profile-image">
-<img src="">
-</figure>
-</section>
+  <!-- ===================== Skills ===================== -->
+  <section id="skills" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-icon">🛠</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Java / Spring Boot</li>
+            <li>Python / Flask</li>
+            <li>MyBatis / JDBC</li>
+            <li>REST API 설계</li>
+            <li>Spring Security</li>
+          </ul>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon">🌐</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>Thymeleaf</li>
+            <li>Chart.js</li>
+          </ul>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon">🗄</div>
+          <h3>Database</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>Oracle</li>
+            <li>ERD 설계</li>
+          </ul>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-icon">⚙️</div>
+          <h3>Tools & Others</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Pandas</li>
+            <li>OutSystems</li>
+            <li>Brity RPA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="about" class="section">
-<h2>About Me</h2>
-<p>
-컴퓨터소프트웨어과를 전공하며 백엔드 개발을 중심으로 학습했습니다.
-Spring Boot와 Flask 기반 웹 서비스 경험이 있으며,
-전체 데이터 흐름과 예외 상황을 고려한 안정적인 구조 설계를 중요하게 생각합니다.
-</p>
-</section>
+  <!-- ===================== Projects ===================== -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Projects</h2>
+      </div>
 
-<section id="skills" class="section">
-<h2>Skills</h2>
+      <!-- Project 01 -->
+      <article class="project-card fade-up" id="project-seoul">
+        <div class="project-top">
+          <div class="project-title-wrap">
+            <span class="project-num-badge">01</span>
+            <div>
+              <h3>서울시 상권 분석 서비스</h3>
+              <p class="project-meta">팀 프로젝트 · 팀장 &nbsp;|&nbsp; Spring Boot + Flask &nbsp;|&nbsp; 2025.12 – 2026.02 (2개월)</p>
+            </div>
+          </div>
+          <a href="https://github.com/AstbHn/seoul_sales_manage" target="_blank" class="github-link">GitHub</a>
+        </div>
 
-<div class="skill-group">
-<h3>Backend</h3>
-<ul>
-<li>Java / Spring Boot</li>
-<li>Python / Flask</li>
-<li>MyBatis / JDBC</li>
-</ul>
-</div>
+        <div class="slider">
+          <div class="slider-track">
+            <img src="resources/project1_1.png" alt="서울시 상권 분석 화면 1">
+            <img src="resources/project1_2.png" alt="서울시 상권 분석 화면 2">
+            <img src="resources/project1_3.png" alt="서울시 상권 분석 화면 3">
+            <img src="resources/project1_4.png" alt="서울시 상권 분석 화면 4">
+          </div>
+          <button class="slider-btn prev" aria-label="이전">&#8249;</button>
+          <button class="slider-btn next" aria-label="다음">&#8250;</button>
+          <div class="slider-dots"></div>
+        </div>
 
-<div class="skill-group">
-<h3>Database</h3>
-<ul>
-<li>MySQL</li>
-<li>Oracle</li>
-</ul>
-</div>
+        <p class="project-desc">서울시 공공 상권 데이터를 기반으로 음식점 업종별 매출 흐름을 분석·예측하고 시각화한 서비스입니다. Python(Flask)과 Java(Spring Boot)를 연동하는 이중 서버 구조를 설계하고, 팀 내에서 Flask API 설계·데이터 전처리부터 Spring Boot 연동까지 주도적으로 담당했습니다.</p>
+        <div class="project-detail">
+          <div>
+            <h4>담당 업무</h4>
+            <ul>
+              <li>Flask API 설계 및 공공 CSV 데이터 전처리·정제 (pandas)</li>
+              <li>Spring Boot Controller·Service 계층 구현</li>
+              <li>Flask·Spring Boot 서버 간 REST API 연동 설계</li>
+              <li>MySQL 연동 및 MyBatis 기반 데이터 조회 로직 구현</li>
+            </ul>
+          </div>
+          <div>
+            <h4>사용 기술</h4>
+            <div class="tech-tags">
+              <span>Java</span><span>Spring Boot</span><span>Python</span><span>Flask</span><span>Pandas</span><span>MySQL</span><span>MyBatis</span>
+            </div>
+          </div>
+        </div>
+      </article>
 
-<div class="skill-group">
-<h3>Tools</h3>
-<ul>
-<li>Pandas</li>
-<li>Git / GitHub</li>
-<li>Unity</li>
-</ul>
-</div>
-</section>
+      <!-- Project 02 -->
+      <article class="project-card fade-up" id="project-order">
+        <div class="project-top">
+          <div class="project-title-wrap">
+            <span class="project-num-badge">02</span>
+            <div>
+              <h3>음식점 주문 관리 시스템</h3>
+              <p class="project-meta">개인 프로젝트 · Spring Boot 백엔드 &nbsp;|&nbsp; 2025.12 – 2026.01 (1개월)</p>
+            </div>
+          </div>
+          <a href="https://github.com/AstbHn/order_management" target="_blank" class="github-link">GitHub</a>
+        </div>
 
-<section id="projects" class="section">
-<h2>Projects</h2>
+        <div class="slider">
+          <div class="slider-track">
+            <img src="resources/project2_1.png" alt="음식점 주문 관리 화면 1">
+            <img src="resources/project2_2.png" alt="음식점 주문 관리 화면 2">
+            <img src="resources/project2_3.png" alt="음식점 주문 관리 화면 3">
+            <img src="resources/project2_4.png" alt="음식점 주문 관리 화면 4">
+          </div>
+          <button class="slider-btn prev" aria-label="이전">&#8249;</button>
+          <button class="slider-btn next" aria-label="다음">&#8250;</button>
+          <div class="slider-dots"></div>
+        </div>
 
-<div class="project-shortcut">
-<a href="#project-seoul">서울시 상권 분석</a>
-<a href="#project-neo">NEO City</a>
-<a href="#project-order">주문 관리</a>
-</div>
+        <p class="project-desc">Spring Boot + Thymeleaf + MyBatis + MySQL 기반 단독 설계·개발 프로젝트입니다. 메뉴 카테고리·아이템 구조 기반 주문 생성 로직과 주문 상태(생성→완료→취소) 흐름 관리를 구현하고, Controller·Service·Mapper 계층 분리를 적용해 유지보수성을 높였습니다.</p>
+        <div class="project-detail">
+          <div>
+            <h4>담당 업무</h4>
+            <ul>
+              <li>메뉴 카테고리·아이템 기반 주문 생성 로직 구현</li>
+              <li>주문-주문상세 데이터 분리 설계로 정합성 확보</li>
+              <li>주문 상태 흐름 관리 (생성 → 완료 → 취소)</li>
+              <li>Controller·Service·Mapper 계층 분리 구조 설계</li>
+            </ul>
+          </div>
+          <div>
+            <h4>사용 기술</h4>
+            <div class="tech-tags">
+              <span>Java</span><span>Spring Boot</span><span>Thymeleaf</span><span>MyBatis</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </article>
 
-<article class="project-card" id="project-seoul">
-<h3>서울시 상권 분석 서비스</h3>
-<p class="project-meta">팀 프로젝트 · 팀장 / Spring Boot 전체 백엔드 / Flask 컨트롤러</p>
+      <!-- Project 03 -->
+      <article class="project-card fade-up" id="project-zoo">
+        <div class="project-top">
+          <div class="project-title-wrap">
+            <span class="project-num-badge">03</span>
+            <div>
+              <h3>동물원 스마트 안전 관리 시스템</h3>
+              <p class="project-meta">팀 프로젝트 · OutSystems LowCode &nbsp;|&nbsp; 2026.04 – 2026.05 (1개월)</p>
+            </div>
+          </div>
+          <a href="resources/ZSMS.pdf" download class="github-link">발표자료 PDF</a>
+        </div>
 
-<p>
-서울시 상권 데이터를 기반으로 음식점 업종별 매출 흐름을 분석하고 시각화한 서비스입니다.
-팀장으로 프로젝트를 총괄하며 Spring Boot 전체 백엔드와 Flask 연동 컨트롤러를 담당했습니다.
-</p>
+        <div class="slider">
+          <div class="slider-track">
+            <img src="resources/project3_1.png" alt="동물원 안전 관리 화면 1">
+            <img src="resources/project3_2.png" alt="동물원 안전 관리 화면 2">
+            <img src="resources/project3_3.png" alt="동물원 안전 관리 화면 3">
+            <img src="resources/project3_4.png" alt="동물원 안전 관리 화면 4">
+            <img src="resources/project3_5.png" alt="동물원 안전 관리 화면 5">
+            <img src="resources/project3_6.png" alt="동물원 안전 관리 화면 6">
+          </div>
+          <button class="slider-btn prev" aria-label="이전">&#8249;</button>
+          <button class="slider-btn next" aria-label="다음">&#8250;</button>
+          <div class="slider-dots"></div>
+        </div>
 
-<ul>
-<li>Spring Boot REST API 전체 구현</li>
-<li>Flask 분석 서버 연동</li>
-<li>DB 구조 설계 및 데이터 흐름 관리</li>
-<li>서비스 예외 처리 설계</li>
-</ul>
+        <p class="project-desc">OutSystems 로우코드 기반으로 사육사·관리팀 간 실시간 알림·승인 프로세스를 자동화한 스마트 안전 관리 시스템입니다. Brity RPA 연동을 통해 현장 사진 자동 검수·보고서 생성·엑셀 데이터 추출 기능을 구현했습니다.</p>
+        <div class="project-detail">
+          <div>
+            <h4>담당 업무</h4>
+            <ul>
+              <li>Entity 데이터 모델 설계 및 UI 화면 구성</li>
+              <li>사육사·관리팀 간 실시간 알림·승인 프로세스 자동화</li>
+              <li>Brity RPA 연동 — 사진 자동 검수·보고서 생성</li>
+              <li>엑셀 데이터 추출 기능 구현</li>
+            </ul>
+          </div>
+          <div>
+            <h4>사용 기술</h4>
+            <div class="tech-tags">
+              <span>OutSystems</span><span>Brity RPA</span>
+            </div>
+          </div>
+        </div>
+      </article>
 
-<div class="project-links">
-<a href="#">Spring Boot Repo</a>
-<a href="#">Flask Repo</a>
-<a href="#">시연 영상</a>
-<a href="#">README</a>
-</div>
+    </div>
+  </section>
 
-<figure>
-<img src="">
-<figcaption>📷 서울시 상권 분석 서비스 화면</figcaption>
-</figure>
-</article>
+  <!-- ===================== Experience ===================== -->
+  <section id="experience" class="section section-dark">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="exp-cols">
+        <div class="exp-col">
+          <h3 class="exp-cat">Education &amp; Training</h3>
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2026.03 – 2026.05</div>
+              <div class="tl-content">
+                <h4>LowCode 기반 AI융합 스마트관리시스템 개발 심화 과정</h4>
+                <p>글로벌 아카데미</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2025.06 – 2026.02</div>
+              <div class="tl-content">
+                <h4>차세대 AI 예측 Solution 개발 과정</h4>
+                <p>글로벌 아카데미</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2023.03 – 2026.02</div>
+              <div class="tl-content">
+                <h4>오산대학교 컴퓨터소프트웨어과</h4>
+                <p>졸업 &nbsp;·&nbsp; 학점 4.35 / 4.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-col">
+          <h3 class="exp-cat">Awards</h3>
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2026.05</div>
+              <div class="tl-content">
+                <h4>성적 우수 부문 표창</h4>
+                <p>글로벌 아카데미</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2026.02</div>
+              <div class="tl-content">
+                <h4>우수 훈련생 부문 표창</h4>
+                <p>글로벌 아카데미</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2025.11</div>
+              <div class="tl-content">
+                <h4>캡스톤 디자인 전시회 우수</h4>
+                <p>백석문화대학교</p>
+              </div>
+            </div>
+          </div>
 
-<article class="project-card" id="project-neo">
-<h3>NEO City (캡스톤 디자인)</h3>
-<p class="project-meta">팀 프로젝트 · Unity 전체 개발</p>
+          <h3 class="exp-cat exp-cat-gap">Certifications</h3>
+          <div class="timeline">
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2025.08</div>
+              <div class="tl-content">
+                <h4>정보처리산업기사</h4>
+                <p>필기 합격 &nbsp;·&nbsp; 실기 결과 대기</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2024.05</div>
+              <div class="tl-content">
+                <h4>ITQ 아래한글 / 한글파워포인트 A등급</h4>
+                <p>한국생산성본부</p>
+              </div>
+            </div>
+            <div class="timeline-item fade-up">
+              <div class="tl-date">2023.11</div>
+              <div class="tl-content">
+                <h4>ITQ 한글엑셀 B등급</h4>
+                <p>한국생산성본부</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>
-미래 도시를 배경으로 한 2D 어드벤처 게임으로 Unity 기반 모든 시스템을 단독 개발했습니다.
-</p>
+  <!-- ===================== Contact ===================== -->
+  <section id="contact" class="section">
+    <div class="section-inner contact-inner">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <h2>Contact</h2>
+      </div>
+      <p class="section-lead">함께 만들어 나갈 기회를 기다립니다.</p>
+      <div class="contact-grid">
+        <div class="contact-card contact-card-static fade-up">
+          <span class="contact-icon">📱</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-val">010-3815-6488</span>
+        </div>
+        <div class="contact-card contact-card-static fade-up">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-val">astbhnd9@gmail.com</span>
+        </div>
+        <a href="https://github.com/AstbHn" target="_blank" class="contact-card fade-up">
+          <span class="contact-icon">💻</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-val">github.com/AstbHn</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<ul>
-<li>캐릭터 조작 및 전투 시스템</li>
-<li>UI / 이벤트 로직 구현</li>
-<li>맵 이동 처리</li>
-<li>Unity 전체 코드 관리</li>
-</ul>
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('top-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
 
-<div class="project-links">
-<a href="#">Unity Repo</a>
-<a href="#">빌드 파일</a>
-<a href="#">시연 영상</a>
-<a href="#">기획 문서</a>
-</div>
+    // Active nav link highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px' });
+    sections.forEach(s => sectionObserver.observe(s));
 
-<figure>
-<img src="">
-<figcaption>📷 NEO City 게임 화면</figcaption>
-</figure>
-</article>
+    // Image sliders
+    document.querySelectorAll('.slider').forEach(slider => {
+      const track = slider.querySelector('.slider-track');
+      const images = track.querySelectorAll('img');
+      const dotsWrap = slider.querySelector('.slider-dots');
+      let cur = 0;
 
-<article class="project-card" id="project-order">
-<h3>음식점 주문 관리 시스템</h3>
-<p class="project-meta">개인 프로젝트 · Spring Boot 백엔드</p>
+      images.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.setAttribute('aria-label', `슬라이드 ${i + 1}`);
+        if (i === 0) d.classList.add('active');
+        d.addEventListener('click', () => go(i));
+        dotsWrap.appendChild(d);
+      });
 
-<p>
-고객 / 점주 / 관리자 역할 기반 주문 관리 시스템입니다.
-Spring Security + MyBatis 구조로 로그인, 주문, 메뉴 기능을 구현했습니다.
-</p>
+      function go(i) {
+        cur = ((i % images.length) + images.length) % images.length;
+        track.style.transform = `translateX(-${cur * 100}%)`;
+        dotsWrap.querySelectorAll('button').forEach((d, j) => d.classList.toggle('active', j === cur));
+      }
 
-<ul>
-<li>Spring Security 인증/권한 처리</li>
-<li>주문 / 메뉴 CRUD</li>
-<li>MyBatis 기반 DB 연동</li>
-<li>예외 흐름 중심 설계</li>
-</ul>
+      slider.querySelector('.prev').addEventListener('click', () => go(cur - 1));
+      slider.querySelector('.next').addEventListener('click', () => go(cur + 1));
+    });
 
-<div class="project-links">
-<a href="#">Backend Repo</a>
-<a href="#">DB Schema</a>
-<a href="#">API 문서</a>
-<a href="#">README</a>
-</div>
-
-<figure>
-<img src="">
-<figcaption>📷 음식점 주문 관리 시스템 화면</figcaption>
-</figure>
-</article>
-
-</section>
-
-<section id="experience" class="section">
-<h2>Experience & Education</h2>
-<ul class="timeline">
-<li>오산대학교 컴퓨터소프트웨어과 졸업 예정 (2026.02)</li>
-<li>글로벌 아카데미 AI 예측 교육 과정</li>
-<li>캡스톤 디자인 경진대회 우수상</li>
-</ul>
-</section>
-
-<section id="contact" class="section">
-<h2>Contact</h2>
-<p>Email: sample@sample.tmp</p>
-<p>GitHub: https://github.com/your-id</p>
-</section>
-
-</main>
-
+    // Scroll fade-up
+    const fadeObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
+  </script>
 </body>
 </html>
