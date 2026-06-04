@@ -223,8 +223,8 @@ button { font-family: inherit; }
 
 .hero-figure {
   flex-shrink: 0;
-  width: 270px;
-  height: 270px;
+  width: 240px;
+  height: 318px;
 }
 
 .hero-figure img {
@@ -232,6 +232,7 @@ button { font-family: inherit; }
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
+  object-position: center top;
   background: #1a1c2e;
 }
 
@@ -675,11 +676,7 @@ button { font-family: inherit; }
   transition: all 0.25s;
 }
 
-.contact-card-static {
-  cursor: default;
-}
-
-.contact-card:not(.contact-card-static):hover {
+.contact-card:hover {
   border-color: #5c6cff;
   transform: translateY(-5px);
   box-shadow: 0 14px 36px rgba(92, 108, 255, 0.14);
@@ -723,7 +720,7 @@ button { font-family: inherit; }
     text-align: center;
     gap: 36px;
   }
-  .hero-figure { width: 200px; height: 200px; }
+  .hero-figure { width: 190px; height: 252px; }
   .hero-actions { justify-content: center; }
 
   .about-body { grid-template-columns: 1fr; gap: 40px; }
